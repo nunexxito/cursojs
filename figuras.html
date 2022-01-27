@@ -4,10 +4,46 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
 	<title>Figuras geometricas</title>
 </head>
 <body>
-	<h1>Figuras geometricas</h1>
+	<header class="header">
+		<h1>Calcula el perimetro y area de tus figuras geometricas</h1>
+	</header>
+	<p>Aqui vas a poder calcular el area y el perimetro de algunas figuras geometricas</p>
+
+	<div class="flex">
+		<section class="cube">
+			<h2>Cuadrado</h2>
+			<form class="form">
+				<label for="inputCube">Escribe cuanto mide un lado de tu cuadrado:</label>
+				<input id="inputCube" type="number">
+				<button type="button" onclick="calcularCuadrado()">Calcular</button>
+			</form>
+		</section>
+
+		<section class="triangle">
+			<h2>Triangulo</h2>
+			<form class="form">
+				<label for="ladoA">Escribe cuanto mide un lado de tu triangulo:</label>
+				<input id="ladoA" type="number" placeholder="Lado A">
+				<input id="ladoB" type="number" placeholder="Lado B">
+				<input id="base" type="number" placeholder="Base">
+				<button type="button" onclick="calcularTriangulo()">Calcular</button>
+			</form>
+		</section>
+
+		<section class="circle">
+			<h2>Circulo</h2>
+			<form class="form">
+				<label for="inputCircle">Escribe cuanto mide un lado de tu circulo:</label>
+				<input id="inputCircle" type="number">
+				<button type="button" onclick="calcularCirculo()">Calcular</button>
+			</form>
+		</section>
+	</div>
+
 	<script src="./figuras.js"></script>
 </body>
 </html>
