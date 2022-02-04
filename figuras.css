@@ -42,3 +42,20 @@ button {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
+
+@media(max-width: 1000px) {
+	.flex{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex section {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding-bottom: 20px;
+	}
+
+	.flex section:last-of-type {
+		border: none;
+	}
+
+}

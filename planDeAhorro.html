@@ -27,8 +27,8 @@
 
 			<div class="percentage">
 				<label>
-					<input type="range" min="0" max="100" value="50" id="percentage">
-					<div id="valuePercentage">50%</div>
+					<input type="range" min="0" max="100" value="50" id="percentage" class="percentageInput">
+					<div id="valuePercentage" class="valueInputs">50%</div>
 				</label>
 				<p>Cuanto % vas ahorrar</p>
 			</div>
@@ -43,6 +43,59 @@
 		<p>Ahorro total: <span id="total">$0</span></p>
 		<p>Saldo por mes: <span id="totalSalary">$0</span></p>
 	</div>
+
+	<!-- <div class="container">
+		<h1>Administra el resto de tu saldo</h1>
+		<p>Distribuye tu saldo de: <span id="balance">$0</span></p>
+		<div class="buttons">
+			<button type="button" id="home" onclick="homeLink()"><ion-icon name="home-outline"></ion-icon></button>
+			<button type="button" id="transport" onclick="transportLink()"><ion-icon name="bus-outline"></ion-icon></button>
+			<button type="button" id="food" onclick="foodLink()"><ion-icon name="fast-food-outline"></ion-icon></button>
+			<button type="button" id="outputs" onclick="outputsLink()"><ion-icon name="beer-outline"></ion-icon></button>
+		</div>
+		<div id="input" class="inputs">
+			<div class="percentage display-not" id="idHome">
+				<p>Cuanto destinar para hogar:</p>
+				<label>
+					<input type="range" min="0" max="100" value="0" id="inputHome" class="percentageInput">
+					<div id="valueHome" class="valueInputs">0%</div>
+				</label>
+			</div>
+
+			<div class="percentage display-not" id="idTransport">
+				<p>Cuanto destinar para transporte:</p>
+				<label>
+					<input type="range" min="0" max="100" value="0" id="inputTransport" class="percentageInput">
+					<div id="valueTransport" class="valueInputs">0%</div>
+				</label>
+			</div>
+
+			<div class="percentage display-not" id="idFood">
+				<p>Cuanto destinar para comidas:</p>
+				<label>
+					<input type="range" min="0" max="100" value="0" id="inputFood" class="percentageInput">
+					<div id="valueFood" class="valueInputs">0%</div>
+				</label>
+			</div>
+
+			<div class="percentage display-not" id="idOutputs">
+				<p>Cuanto destinar para salidas:</p>
+				<label>
+					<input type="range" min="0" max="100" value="0" id="inputOutputs" class="percentageInput">
+					<div id="valueOutputs" class="valueInputs">0%</div>
+				</label>
+			</div>
+
+			<button type="button" class="calcular2" onclick="calculateAdiministration()">Calcular</button>
+
+			<div id="administration" class="display-not">
+				<p>Ditribuido en hogar :<span id="hogar">$0</span></p>
+				<p>Ditribuido en transporte :<span id="transporte">$0</span></p>
+				<p>Ditribuido en comida :<span id="comida">$0</span></p>
+				<p>Ditribuido en salidas :<span id="salidas">$0</span></p>
+			</div>
+		</div>
+	</div> -->
 
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

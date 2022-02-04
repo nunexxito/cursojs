@@ -42,8 +42,8 @@ p span {
 	transform: translate(-50%, -50%); */
 	width: 80%;
 	max-width: 25rem;
-	margin: 3rem auto;
 	border-radius: 1rem;
+	margin: 3rem auto;
 	padding: 2rem;
 	box-shadow: 9px 9px 16px rgba(163, 177, 198, .6), -9px -9px 16px rgba(255, 255, 255, .5);
 }
@@ -68,6 +68,7 @@ label {
 
 button {
 	border: none;
+	cursor: pointer;
 	font-size: 1rem;
 	font-weight: 700;
 	border-radius: .5rem;
@@ -132,7 +133,7 @@ button:hover {
 	width: 100%;
 	/* height: 3rem; */
 }
-.percentage label #valuePercentage {
+.percentage label .valueInputs {
 	position: absolute;
 	top: -.65rem;
 	right: .2rem;
@@ -140,7 +141,7 @@ button:hover {
 	color: #797d7f;
 }
 
-#percentage {
+.percentageInput {
 	height: 22px;
 	-webkit-appearance: none;
 	margin: 10px 0;
@@ -150,17 +151,17 @@ button:hover {
 	padding-right: 3rem;
 	box-shadow: 9px 9px 16px rgba(163, 177, 198, .6), -9px -9px 16px rgba(255, 255, 255, .5);
 }
-#percentage:focus {
+.percentageInput:focus {
 	outline: none;
 }
-#percentage::-webkit-slider-runnable-track {
+.percentageInput::-webkit-slider-runnable-track {
 	width: 100%;
 	height: 3px;
 	cursor: pointer;
 	background: #EDEDED;
 	border-radius: 5px;
 }
-#percentage::-webkit-slider-thumb {
+.percentageInput::-webkit-slider-thumb {
 	border: 3px solid #ABABAB;
 	height: 13px;
 	width: 13px;
@@ -170,24 +171,24 @@ button:hover {
 	-webkit-appearance: none;
 	margin-top: -6.5px;
 }
-#percentage:focus::-webkit-slider-runnable-track {
+.percentageInput:focus::-webkit-slider-runnable-track {
 	background: #EDEDED;
 }
-#percentage::-moz-range-track {
+.percentageInput::-moz-range-track {
 	width: 100%;
 	height: 3px;
 	cursor: pointer;
 	background: #EDEDED;
 	border-radius: 5px;
 }
-#percentage::-moz-range-thumb {
+.percentageInput::-moz-range-thumb {
 	border: 3px solid #ABABAB;
 	height: 13px;
 	width: 13px;
 	border-radius: 50px;
 	cursor: pointer;
 }
-#percentage::-ms-track {
+.percentageInput::-ms-track {
 	width: 100%;
 	height: 3px;
 	cursor: pointer;
@@ -195,15 +196,15 @@ button:hover {
 	border-color: transparent;
 	color: transparent;
 }
-#percentage::-ms-fill-lower {
+.percentageInput::-ms-fill-lower {
 	background: #EDEDED;
 	border-radius: 10px;
 }
-#percentage::-ms-fill-upper {
+.percentageInput::-ms-fill-upper {
 	background: #EDEDED;
 	border-radius: 10px;
 }
-#percentage::-ms-thumb {
+.percentageInput::-ms-thumb {
 	margin-top: 1px;
 	border: 3px solid #ABABAB;
 	height: 13px;
@@ -211,9 +212,62 @@ button:hover {
 	border-radius: 50px;
 	cursor: pointer;
 }
-#percentage:focus::-ms-fill-lower {
+.percentageInput:focus::-ms-fill-lower {
 	background: #EDEDED;
 }
-#percentage:focus::-ms-fill-upper {
+.percentageInput:focus::-ms-fill-upper {
 	background: #EDEDED;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+}
+.buttons button {
+	border-radius: 50%;
+}
+.buttons button ion-icon {
+	font-size: 1.5rem;
+}
+
+.home {
+	background-color: #287bff;
+}
+.home:hover {
+	background-color: rgba(40, 122, 255, 0.9);
+}
+.transport {
+	background-color: #8de02c;
+}
+.transport:hover {
+	background-color: hsla(88, 74%, 53%, 0.7);
+}
+.food {
+	background-color: #f9ca3f;
+}
+.food:hover {
+	background-color: hsla(45, 94%, 61%, 0.7);
+}
+.outputs {
+	background-color: #f00;
+}
+.outputs:hover {
+	background-color: rgba(255, 0, 0, 0.7);
+}
+
+.inputs {
+	margin-top: 1.2rem;
+}
+
+.display-not {
+	display: none;
+}
+.display {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.calcular2 {
+	width: 100%;
+	margin-bottom: 1rem;
 }
