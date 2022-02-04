@@ -64,4 +64,8 @@ a:hover ion-icon {
 		margin-top: 0;
 	}
 
+	li ion-icon {
+		font-size: 150px;
+	}
+
 }
